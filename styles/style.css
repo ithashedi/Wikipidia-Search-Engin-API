@@ -1,0 +1,46 @@
+body {
+    padding:0;
+    margin:0;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.sub-container {
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px;
+    padding-bottom: 7px;
+    padding-top: 60px;
+}
+
+.btn-icon {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    transition: transform .2s; 
+}
+
+.btn-icon:hover {
+    transform: scale(1.5);
+}
+.img-icon {
+    width:70%;
+}
+
+.search-box {
+    height: 39px;
+    border: none;
+    width: 194px;
+    font-size: 18px;
+}
