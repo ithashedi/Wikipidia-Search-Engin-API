@@ -11,19 +11,25 @@
 <body>
     <main>
         <section class="main-container">
-            <div class="sub-container" aria-hidden="true">
+            <div class="sub-container">
+
                 <figure>
                     <img src="./images/Wikipedia-logo.svg" alt="Wikipidia Logo" style="width:100%">
                   </figure>
+
+                  <h1>Wikipedia Search Engin</h1>
+                  
                   <form class="search-form" role="search">
-                      <input type="text" class="search-box" id="searchBox" role="searchbox" placeholder="Search Wikipedia">
-                      <button class="btn-icon" type="submit" role="button">
+                      <label aria-label="Search anythin you like in Wikipidia" for="search-box"></label>
+                      <input title="type what you like to search" type="text" class="search-box" id="search-Box" role="searchbox" placeholder="Search Wikipedia">
+                      <button id="btn-cancel" title="cancel search" class="btn-icon" role="button">
                         <img class="img-icon" aria-hidden="true" src ="./images/xicon.svg" alt= "X icon">
                       </button>
-                      <button class="btn-icon" type="submit" role="button">
+                      <button title="Click to search" class="btn-icon" type="submit" role="button">
                         <img class="img-icon" aria-hidden="true" src ="./images/search-button.svg" alt= "Search icon">
                       </button>
                   </form>
+
             </div>
         </section>
     </main>
