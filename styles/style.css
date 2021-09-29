@@ -41,6 +41,18 @@ body {
 .search-box {
     height: 39px;
     border: none;
-    width: 194px;
+    width: 100%;
     font-size: 18px;
+}
+
+.hide-element {
+    display: none;
+}
+
+.show-element {
+    display: unset;
+}
+
+#btn-cancel{
+    display: none;
 }
