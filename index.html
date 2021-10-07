@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipidia API Search Engin </title>
-    <link rel="stylesheet" href="./styles/style.css">
     <script src="./scripts/index.js" defer> </script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <main>
-        <section class="main-container">
+        <section class="search-container">
             <div class="sub-container">
 
                 <figure>
@@ -22,8 +22,8 @@
                   <form class="search-form" role="search">
                       <label aria-label="Search anythin you like in Wikipidia" for="search-box"></label>
                       <input title="type what you like to search" type="text" class="search-box" id="search-Box" role="searchbox" placeholder="Search Wikipedia">
-                      <button id="btn-cancel" title="cancel search" class="btn-icon" role="button">
-                        <img class="img-icon" aria-hidden="true" src ="./images/xicon.svg" alt= "X icon">
+                      <button onclick="clearSearchBox()" id="btn-cancel" title="cancel search" class="btn-icon" role="button">
+                        <img class="img-icon img-cancel" aria-hidden="true" src ="./images/xicon.svg" alt= "X icon">
                       </button>
                       <button title="Click to search" class="btn-icon" type="submit" role="button">
                         <img class="img-icon" aria-hidden="true" src ="./images/search-button.svg" alt= "Search icon">
@@ -31,6 +31,9 @@
                   </form>
 
             </div>
+        </section>
+        <section class="results-container">
+            <h3 class="found-results-text"></h3>
         </section>
     </main>
 </body>

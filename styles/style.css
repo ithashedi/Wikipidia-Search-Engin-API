@@ -3,7 +3,7 @@ body {
     margin:0;
 }
 
-.main-container {
+.search-container {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -55,4 +55,53 @@ body {
 
 #btn-cancel{
     display: none;
+}
+
+.found-results-text {
+    display: none;
+    justify-content: space-between;
+}
+
+
+.results-container{
+    padding:10px;
+}
+
+.result-item {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 24px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform .2s; 
+}
+
+.result-item:hover{
+    background: #DEDEDE;
+    transform: scale(1.003);
+}
+.found-results-text{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.result-title {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.another-search-btn{
+    padding: 21px;
+    background: transparent;
+    border-radius: 7px;
+    border: solid 2px;
+    cursor: pointer;
+    transition: transform .2s;
+    font-weight: bold;
+}
+.another-search-btn:hover{
+    color: white;
+    background:black;
+    transform: scale(1.003);
+
 }
