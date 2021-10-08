@@ -22,9 +22,9 @@
                   <form class="search-form" role="search">
                       <label aria-label="Search anythin you like in Wikipidia" for="search-box"></label>
                       <input title="type what you like to search" type="text" class="search-box" id="search-Box" role="searchbox" placeholder="Search Wikipedia">
-                      <button onclick="clearSearchBox()" id="btn-cancel" title="cancel search" class="btn-icon" role="button">
+                      <a onclick="clearSearchBox()" id="btn-cancel" title="cancel search" class="btn-icon" aria-label="button" role="button">
                         <img class="img-icon img-cancel" aria-hidden="true" src ="./images/xicon.svg" alt= "X icon">
-                      </button>
+                      </a>
                       <button title="Click to search" class="btn-icon" type="submit" role="button">
                         <img class="img-icon" aria-hidden="true" src ="./images/search-button.svg" alt= "Search icon">
                       </button>
@@ -32,8 +32,21 @@
 
             </div>
         </section>
+
+        <div aria-hidden="true" role="loading" class="loading-indicator">
+            <div class="sk-chase js-spinner hidden">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+
         <section class="results-container">
             <h3 class="found-results-text"></h3>
+            <div class="search-results"></div>
         </section>
     </main>
 </body>
